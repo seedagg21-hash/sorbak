@@ -1,0 +1,10 @@
+CSS sayfanın görünümünü belirler.
+
+class seçici: .box
+id seçici: #main (tek olmalı)
+
+display:
+block, inline, inline-block, flex
+
+Sık hata:
+id birden fazla kez kullanılır ❌

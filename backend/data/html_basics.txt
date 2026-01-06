@@ -1,0 +1,10 @@
+HTML (HyperText Markup Language) web sayfalarının iskeletidir.
+
+div: block elementtir, satırı kaplar.
+span: inline elementtir, sadece içeriği kadar yer kaplar.
+
+img etiketi kapanış almaz.
+a etiketi link verir.
+
+Sık hata:
+img etiketi kapanışlı yazılmaz </img> ❌

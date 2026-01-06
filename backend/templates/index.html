@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SorBak 1.0</title>
+  <link rel="stylesheet" href="/static/style.css" />
+
+</head>
+<body>
+
+<div class="app">
+  <main class="chat-area">
+    <header class="top-header">
+      <h1>SorBak 1.0</h1>
+      <p>Merak et, sor, öğren.</p>
+    </header>
+
+    <section id="messages" class="chat-messages">
+      <div class="message bot">
+        Merhaba 👋  
+        Sana ne hakkında yardımcı olabilirim?
+      </div>
+    </section>
+
+    <form class="chat-input" onsubmit="sendMessage(event)">
+      <div class="input-wrapper">
+        <textarea id="userInput" placeholder="Bir şey sor, bakalım 😄" rows="1"></textarea>
+        <button type="submit" class="send-btn">➤</button>
+      </div>
+    </form>
+    <div class="signature">
+  SorBak 1.0 (Beta) • Made by Seda Işık
+</div>
+
+  </main>
+</div>
+
+<script src="/static/app.js"></script>
+</body>
+</html>
