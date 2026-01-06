@@ -33,13 +33,13 @@ class AskRequest(BaseModel):
     message: str
 
 
-# 🌐 ANA SAYFA (HTML)
+
 @app.get("/", response_class=HTMLResponse)
 def home(request: Request):
     return templates.TemplateResponse("index.html", {"request": request})
 
 
-# ❤️ HEALTH CHECK (artık /health)
+
 @app.get("/health")
 def health():
     return {"status": "ok"}
@@ -72,3 +72,7 @@ def ask_ai(data: AskRequest):
         return {"answer": result["choices"][0]["message"]["content"]}
     except Exception as e:
         return {"answer": f"Hata oluştu: {str(e)}"}
+
+@app.get("/health")
+def health():
+    return {"status": "ok"}
